@@ -1,0 +1,5 @@
+*.pyc
+env/
+**/bulma_theme/static
+node_modules/
+*.sqlite3

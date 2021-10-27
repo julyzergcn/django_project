@@ -1,0 +1,51 @@
+<nav class="navbar has-shadow">
+  <div class="navbar-brand">
+
+    {% block top_navbar_logo %}
+      <a class="navbar-item" href="/">
+        Logo
+      </a>
+    {% endblock %}
+
+    <div class="navbar-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      {% block top_navbar_menu_start %}
+      {% endblock %}
+    </div>
+
+    <div class="navbar-end">
+      {% block top_navbar_menu_end %}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">
+            First, Last Name
+          </div>
+          <div class="navbar-dropdown">
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small mr-1">
+                  <i class="fa fa-user-circle-o"></i>
+                </span>
+                Profile
+              </div>
+            </a>
+            <a href="#" class="navbar-item">
+              <div>
+                <span class="icon is-small mr-1">
+                  <i class="fa fa-sign-out"></i>
+                </span>
+                Sign Out
+              </div>
+            </a>
+          </div>
+        </div>
+      {% endblock %}
+    </div> {# .navbar-end #}
+  </div> {# .navbar-menu #}
+</nav>
